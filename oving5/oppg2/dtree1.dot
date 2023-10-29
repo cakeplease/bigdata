@@ -1,0 +1,16 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="unif_cell_size <= 3.5\ngini = 0.456\nsamples = 559\nvalue = [362, 197]\nclass = y[0]"] ;
+1 [label="bare_nuclei <= 6.0\ngini = 0.142\nsamples = 377\nvalue = [348, 29]\nclass = y[0]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="norm_nucleoli <= 8.5\ngini = 0.069\nsamples = 361\nvalue = [348, 13]\nclass = y[0]"] ;
+1 -> 2 ;
+3 [label="gini = 0.044\nsamples = 356\nvalue = [348, 8]\nclass = y[0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = y[1]"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 16\nvalue = [0, 16]\nclass = y[1]"] ;
+1 -> 5 ;
+6 [label="gini = 0.142\nsamples = 182\nvalue = [14, 168]\nclass = y[1]"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
