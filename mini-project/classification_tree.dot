@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Type of Travel <= 0.5\ngini = 0.564\nsamples = 103903\nvalue = [46738, 7529, 49636]\nclass = Business"] ;
+1 [label="gini = 0.309\nsamples = 32223\nvalue = [26461, 3620, 2142]\nclass = Eco"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Flight Distance <= 1425.5\ngini = 0.478\nsamples = 71680\nvalue = [20277, 3909, 47494]\nclass = Business"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.571\nsamples = 43113\nvalue = [18864, 3516, 20733]\nclass = Business"] ;
+2 -> 3 ;
+4 [label="gini = 0.12\nsamples = 28567\nvalue = [1413, 393, 26761]\nclass = Business"] ;
+2 -> 4 ;
+}
